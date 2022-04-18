@@ -1,0 +1,7 @@
+com:
+  razzzil:
+    jsonbean:
+      enabled: true
+    jsonschema:
+      enabled: true
+      url: https://jsonschema.razzzil.com
