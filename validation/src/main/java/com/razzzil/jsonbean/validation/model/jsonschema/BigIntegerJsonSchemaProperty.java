@@ -1,16 +1,16 @@
 package com.razzzil.jsonbean.validation.model.jsonschema;
 
-
-import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
+/**
+ * JsonSchema integer property
+ */
 @EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @SuperBuilder

@@ -15,6 +15,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 
+/**
+ * Common JsonSchema number property
+ * @param <T> BigInteger or BigDecimal
+ */
 @EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @NoArgsConstructor

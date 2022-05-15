@@ -2,6 +2,9 @@ package com.razzzil.jsonbean.validation.constant;
 
 import lombok.experimental.UtilityClass;
 
+/**
+ * Default JsonSchema URLs
+ */
 @UtilityClass
 public class SchemaVersion {
     public static final String DRAFT_6 = "http://json-schema.org/draft-06/schema#";

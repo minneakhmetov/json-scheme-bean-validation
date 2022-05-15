@@ -10,6 +10,9 @@ import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
+/**
+ * JsonSchema Enum property
+ */
 @EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @NoArgsConstructor

@@ -13,6 +13,10 @@ import javax.annotation.security.PermitAll;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * JsonSchema Controller
+ * Enabled by property com.razzzil.jsonschema.enabled=true
+ */
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(JsonSchemaController.URI)
@@ -23,12 +27,20 @@ public class JsonSchemaController {
 
     private final Map<String, JsonRootSchema> configuration;
 
+    /**
+     * @return Set<String> Set Of Names DTOs
+     */
     @GetMapping
     @PermitAll
     public ResponseEntity<Set<String>> scheme() {
         return ResponseEntity.ok(configuration.keySet());
     }
 
+    /**
+     * Get Scheme by DTO name
+     * @param schemeName DTO name
+     * @return JsonRootSchema JsonSchema model
+     */
     @GetMapping("/{schemeName}")
     @PermitAll
     public ResponseEntity<JsonRootSchema> scheme(@PathVariable String schemeName) {

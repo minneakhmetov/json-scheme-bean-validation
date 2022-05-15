@@ -16,6 +16,11 @@ import org.springframework.context.annotation.Primary;
 
 import java.util.Map;
 
+
+/**
+ * JsonSchema Configuration
+ * Enabled by com.razzzil.jsonschema.enabled=true
+ */
 @Configuration
 @ConditionalOnProperty(prefix = "com.razzzil.jsonschema", value = "enabled", havingValue = "true")
 @Slf4j

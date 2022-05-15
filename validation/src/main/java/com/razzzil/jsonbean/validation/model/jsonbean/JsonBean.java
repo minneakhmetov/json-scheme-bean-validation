@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 
 import java.util.Map;
 
+/**
+ * Custom Json Schema (Json Bean) Display DTO
+ */
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder

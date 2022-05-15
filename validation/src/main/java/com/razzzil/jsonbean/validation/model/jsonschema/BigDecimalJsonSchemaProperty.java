@@ -1,15 +1,15 @@
 package com.razzzil.jsonbean.validation.model.jsonschema;
 
-
-import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import java.math.BigDecimal;
 
+/**
+ * JsonSchema Number Property with floating point
+ */
 @EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @SuperBuilder
@@ -18,6 +18,6 @@ public class BigDecimalJsonSchemaProperty extends NumberJsonSchemaProperty<BigDe
 
     @Override
     protected Type getType() {
-        return Type.INTEGER;
+        return Type.NUMBER;
     }
 }

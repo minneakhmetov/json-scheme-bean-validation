@@ -11,6 +11,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
+/**
+ * Custom Json Schema (Json Bean) configuration for Spring
+ * Enabled by com.razzzil.jsonbean.enabled=true
+ */
 @Configuration
 @Slf4j
 @ConditionalOnProperty(prefix = "com.razzzil.jsonbean", value = "enabled", havingValue = "true")

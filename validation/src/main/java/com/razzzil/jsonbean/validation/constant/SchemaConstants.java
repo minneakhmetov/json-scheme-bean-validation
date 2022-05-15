@@ -2,6 +2,9 @@ package com.razzzil.jsonbean.validation.constant;
 
 import lombok.experimental.UtilityClass;
 
+/**
+ * Main Constants
+ */
 @UtilityClass
 public class SchemaConstants {
     public static final String DESCRIPTION_DELIMITER = "; ";

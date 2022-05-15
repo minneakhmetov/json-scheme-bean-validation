@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+/**
+ * JsonSchema Types
+ */
 @AllArgsConstructor
 @Getter(onMethod = @__(@JsonValue))
 public enum Type {

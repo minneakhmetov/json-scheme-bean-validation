@@ -30,6 +30,9 @@ import java.util.stream.Stream;
 
 import static com.razzzil.jsonbean.validation.constant.SchemaConstants.JAVAX_ANNOTATIONS_SEARCH_PACKAGE;
 
+/**
+ * JsonSchema Analyzer Service
+ */
 @Slf4j
 public class JsonSchemaAnalyzer {
 
@@ -40,6 +43,12 @@ public class JsonSchemaAnalyzer {
                     YearMonth.class, ZonedDateTime.class, HijrahDate.class, JapaneseDate.class, MinguoDate.class,
                     ThaiBuddhistDate.class);
 
+    /**
+     * @param context Spring Application Context
+     * @param jsonSchemaConfiguration Properties config
+     * @param messageSource function to apply localization
+     * @return Map<String, JsonRootSchema> full config
+     */
     @SneakyThrows
     public static Map<String, JsonRootSchema> getJsonSchema(ApplicationContext context,
                                                             SchemeConfiguration.JsonSchemaConfiguration jsonSchemaConfiguration,

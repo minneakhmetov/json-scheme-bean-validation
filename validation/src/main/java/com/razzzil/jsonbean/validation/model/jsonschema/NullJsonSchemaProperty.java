@@ -6,6 +6,9 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+/**
+ * JsonSchema Null property
+ */
 @EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @SuperBuilder

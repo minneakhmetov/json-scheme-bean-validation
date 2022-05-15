@@ -15,6 +15,10 @@ import java.util.StringJoiner;
 
 import static com.razzzil.jsonbean.validation.constant.SchemaConstants.DESCRIPTION_DELIMITER;
 
+/**
+ * Common JsonSchema Model
+ * There are all common properties, which any type has
+ */
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder

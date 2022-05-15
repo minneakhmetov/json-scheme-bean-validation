@@ -6,9 +6,11 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+/**
+ * JsonSchema Boolean Property
+ */
 @EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
-
 @SuperBuilder
 @Data
 public class BooleanJsonSchemaProperty extends JsonSchemaProperty {

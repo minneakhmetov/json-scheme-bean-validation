@@ -7,6 +7,9 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+/**
+ * JsonSchema Object properties with hidden type
+ */
 @EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @SuperBuilder

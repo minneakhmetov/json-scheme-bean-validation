@@ -23,6 +23,9 @@ import java.util.stream.Stream;
 
 import static com.razzzil.jsonbean.validation.constant.SchemaConstants.JAVAX_ANNOTATIONS_SEARCH_PACKAGE;
 
+/**
+ * Custom Json Schema (Json Bean) Analyzer Service
+ */
 @Slf4j
 public class JsonBeanAnalyzer {
 
@@ -30,6 +33,11 @@ public class JsonBeanAnalyzer {
 
     private static final String MESSAGE_METHOD_NAME = "message";
 
+    /**
+     * @param context Spring Application Context
+     * @param messageSource function to apply localization
+     * @return JsonBeanConfig full config
+     */
     @SneakyThrows
     public static JsonBeanConfig getJsonConfiguration(ApplicationContext context, Function<String, Object> messageSource) {
         Reflections javaxAnnotations = new Reflections(JAVAX_ANNOTATIONS_SEARCH_PACKAGE);
